@@ -71,7 +71,7 @@ const MainLayout: React.FC = () => {
         setMessage(myMessage);
         setTimeout(() => {
           setMessage(undefined);
-        }, 2000);
+        }, 12000);
       }
     });
 
@@ -83,8 +83,8 @@ const MainLayout: React.FC = () => {
   if (message === undefined) return null;
 
   return (
-    <div className="toast toast-end toast-top">
-      <div className="alert alert-info">
+    <div className="toast toast-end toast-top z-30">
+      <div className="alert alert-info ">
         <span>{message?.content}</span>
       </div>
     </div>
